@@ -1,0 +1,122 @@
+page{
+  background-color: #fafafa;
+}
+.mui-drawer{
+      display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.mui-flexbox{
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: flex;
+  display: -webkit-flex;
+  box-align:center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+.mui-flex-row{
+  flex-direction: row;
+  box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+}
+.mui-flexbox .mui-flexbox-item{
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  min-width: 20px;
+  width: 0%;
+}
+.cbox{
+  text-align: center;
+}
+.cbox-inner{
+  padding: 15px 0;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.demo_list_box{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #000000;
+  flex-wrap: wrap;
+}
+.demo-icon{
+  width: 80rpx;height: 80rpx;
+}
+
+.mui-1px-t:after,mui-1px-t:before{
+  content: " ";
+  position:absolute;
+  left: 0;
+  right: 0;
+  height: 1px ;
+  color: #c7c7c7;
+}
+
+
+
+
+.mui-1px, .mui-1px-b, .mui-1px-l, .mui-1px-r, .mui-1px-t, .mui-1px-tb{
+  position: relative;
+}
+.mui-1px-r:after{
+  right: 0;
+    border-right: 1px solid #c7c7c7;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+}
+.mui-1px-l:before, .mui-1px-r:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    color: #c7c7c7;
+    }
+.mui-1px-r::after{
+    content:"";
+     right: 0;
+    border-right: 1px solid #c7c7c7;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5)
+}
+.mui-1px-t:before {
+    top: 0;
+    border-top: 1px solid #c7c7c7;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+}
+.mui-1px-b:after, .mui-1px-t:before{
+  content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    color: #c7c7c7;
+}
+
+.demo-icon{
+  font-family: mui-demo;
+  color: #f76260;
+}

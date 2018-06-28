@@ -1,0 +1,15 @@
+<!--component/popup/popup.wxml-->
+
+<view class="model" wx:if="{{modelShow}}">
+  <view class="inner1">
+    <view class="title">{{title}}</view>
+    <view class="image" wx:if="{{icon}}">
+      <image src="{{icon}}"></image>
+    </view>
+    <view class="subtitle">{{desc}}</view>
+    <view class="model-btns">
+      <view bindtap="cancelclick" class="cancel">{{cancelTxt}}</view>
+      <view bindtap="confirmclick" class="confirm">{{confirmTxt}}</view>
+    </view>
+  </view>
+</view>

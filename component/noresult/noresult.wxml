@@ -1,0 +1,12 @@
+<!--pages/pageStatus/noresult/noresult.wxml-->
+<noresult class="vui_noresult"  hidden="{{!isShow}}">
+    <!-- <view class="vui_noresult"  hidden="{{!isShow}}"> -->
+        <view class="vui_noresult_icon">
+            <image class="noresult_icon" src="{{resultIcon}}"></image>
+        </view>
+        <view class="vui_noresult_name">
+            <text >{{resultName}}</text>
+        </view>
+    <!-- </view> -->
+</noresult>
+

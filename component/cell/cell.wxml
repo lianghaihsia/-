@@ -1,0 +1,10 @@
+<!--component/cell/cell.wxml-->
+<view class='mui-cell-group'>
+    <navigator class='mui-cell' hover-class='none' url='{{link}}'  wx:key="cell">
+        <view class='mui-cell-icon' wx:if="{{icon}}">
+            <image class='icon' src="{{icon}}"></image>
+        </view>
+        <view class='mui-cell-text' wx:if="{{name}}">{{name}}</view>
+        <view class='mui-cell-remark' wx:if="{{detail}}">{{detail}}</view>
+    </navigator>
+</view>

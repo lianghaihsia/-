@@ -1,0 +1,164 @@
+/* component/panel/panel.wxss */
+/* mui-panel */
+
+.mui-panel {
+    margin: 0 20rpx;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.mui-panel:first-child {
+    /* border-bottom: none; */
+}
+
+
+/* mui-media-box */
+
+.mui-media-box {
+    display: flex;
+    padding: 30rpx 0;
+}
+
+.mui-media-box:last-of-type {
+    border-bottom: none;
+}
+
+.mui-media-box__hd {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 30rpx;
+}
+
+.mui-media-box__hd .mui-media-box__thumb {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+}
+
+.mui-media-box__bd {
+    flex: 1;
+    min-width: 1;
+}
+
+.mui-media-box__bd .mui-media-box__time {
+    display: flex;
+    align-items: center;
+}
+
+.mui-media-box__time .time {
+    font-size: 24rpx;
+    color: #1195db;
+    line-height: 22rpx;
+    margin-right: 16rpx;
+    display: flex;
+    align-items: center;
+}
+
+.mui-media-box__title {
+    font-size: 32rpx;
+    line-height: 32rpx;
+    color: #000;
+    margin-top: 24rpx;
+    margin-bottom: 24rpx;
+    max-width: 480rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mui-media-box__desc {
+    display: flex;
+    align-items: center;
+}
+
+.mui-media-box__desc-item {
+    font-size: 20rpx;
+    line-height: 24rpx;
+    color: #808080;
+    margin-right: 56rpx;
+    max-width: 138rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* mui-media-box */
+
+
+/* star */
+
+.mui-star-wrapper {
+    width: 150rpx;
+    height: 24rpx;
+    position: relative;
+    display: flex;
+}
+
+
+/* .mui-star-bg {
+    width: 130rpx;
+    height: 24rpx;
+    background: url('http://api.servicedata.cn/star-select.png') repeat-x;
+    position: relative;
+    overflow: hidden;
+    background-size: 30rpx 24rpx;
+} */
+
+.mui-star {
+    width: 26rpx;
+    height: 22rpx;
+    background: url('http://api.servicedata.cn/star4-select.png') repeat-x;
+    background-size: 26rpx 22rpx;
+    /* position: absolute; */
+}
+
+.mui-star-hidden {
+    width: 26rpx;
+    height: 22rpx;
+    background: url('http://api.servicedata.cn/star4.png') repeat-x;
+    overflow: hidden;
+    background-size: 26rpx 22rpx;
+    /* margin-left: 26rpx; */
+    /* position: absolute; */
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+}
+
+
+/* star */
+
+.spaceflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time-wrapper {
+    margin-right: 16rpx;
+}
+
+.time .time-icon {
+    width: 22rpx;
+    height: 22rpx;
+    margin-right: 8rpx;
+}
+
+.status-wrapper {
+    width: 118rpx;
+    height: 48rpx;
+    border: 1px solid #b2b2b2;
+     color: #b2b2b2; 
+    text-align: center;
+    line-height: 48rpx;
+    border-radius: 8rpx;
+    font-size: 24rpx;
+    
+}
+.status-wrapper.active{
+    color: #ffec13;
+      border: 1px solid #ffec13;
+}
+
+
+/* end time */

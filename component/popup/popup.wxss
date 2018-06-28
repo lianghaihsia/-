@@ -1,0 +1,85 @@
+/* component/popup/popup.wxss */
+
+
+.model {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1099;
+}
+
+.model .inner1 {
+    width: 624rpx;
+    background: #fff;
+    border-radius: 8rpx;
+    margin: 260rpx auto;
+    overflow: hidden;
+}
+.model .inner2 {
+  height: 570rpx;
+}
+
+.model .inner1 .title {
+    font-size: 36rpx;
+    color: #000;
+    line-height: 100rpx;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20rpx;
+}
+
+.model .inner1 .image {
+    text-align: center;
+    margin-top: 20rpx;
+}
+
+.model .inner1 image {
+    width: 202rpx;
+    height: 202rpx;
+}
+
+.model .inner1 .subtitle {
+    margin-top: 50rpx;
+    padding: 0 80rpx;
+    color: #888;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+
+.model-btns {
+    border-top: 1rpx solid #ebebeb;
+    height: 100rpx;
+    margin-top: 28rpx;
+    display: flex;
+    text-align: center;
+    font-size: 30rpx;
+    color: #000;
+    line-height: 100rpx;
+}
+
+.model-btns .cancel {
+    width: 50%;
+    position: relative;
+}
+
+.model-btns .cancel:after {
+    content: " ";
+    position: absolute;
+    top: -1rpx;
+    right: 0;
+    width: 1px;
+    height: 210rpx;
+    border-right: 1px solid #ebebeb;
+    color: #ebebeb;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+.model-btns .confirm {
+    width: 50%;
+    color: #1296db;
+}

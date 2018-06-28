@@ -1,0 +1,21 @@
+<!--component/tab/tab.wxml-->
+<!-- <view class="mui-tab-wrap">
+    <view class="mui-tab-container">
+        <view class="mui-tab">
+            <view wx:for="{{list}}"
+                style="border-width: initial;border-style: none;border-image: initial;" 
+               >{{item.name}}</view>
+                    </view>
+    </view>
+</view> -->
+<!-- <view class="mui-tab-wrap">
+        <view class="mui-tab-container">
+            <view class="mui-tab"> -->
+                <view  wx:key="list" data-index="{{index}}" class="mui-tab-item {{index == curIndex?'mui-tab-selected':''}}" 
+                style="border-width: initial;border-style: none;border-image: initial;" >{{name}}</view> 
+                <!-- <view class="mui-tab-ink-bar mui-tab-ink-bar-transition-backward" 
+                style="display: block; height: 2px;background-color: #1195db;left: {{barLeft}}rpx;right:{{barRight}}rpx"></view> -->
+            <!-- </view>
+        </view>
+    </view> -->
+<!-- <loading hidden="{{!showLoading}}">正在加载</loading> -->

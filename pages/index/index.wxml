@@ -1,0 +1,34 @@
+<view class='mui-drawer'>
+  <view class='demo_list_box'>
+    <view class='mui-flex-row mui-flexbox '>
+      <view wx:for="{{component}}"  wx:key="component" class='mui-flexbox mui-flexbox-item mui-1px-t' style="flex: 0 0 33.3333%;">
+        <navigator url="{{item.url+'?name='+item.name}}" class='cbox-inner mui-1px-r'>
+          <view class='cbox-inner '>
+            <image class='demo-icon' src="{{item.icon}}"></image>
+            <view class='demo-name'>{{item.name}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='mui-flex-row mui-flexbox '>
+      <view wx:for="{{component2}}" wx:key="component2" class='mui-flexbox mui-flexbox-item mui-1px-t' style="flex: 0 0 33.3333%;">
+        <navigator url="{{item.url}}" class='cbox-inner mui-1px-r'>
+          <view class='cbox-inner '>
+            <image class='demo-icon' src="{{item.icon}}"></image>
+            <view class='demo-name'>{{item.name}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='mui-flex-row mui-flexbox '>
+      <view wx:for="{{component3}}" wx:key="component2" class='mui-flexbox mui-flexbox-item mui-1px-t' style="flex: 0 0 33.3333%;">
+        <navigator url="{{item.url}}" class='cbox-inner mui-1px-r'>
+          <view class='cbox-inner '>
+            <image class='demo-icon' src="{{item.icon}}"></image>
+            <view class='demo-name'>{{item.name}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

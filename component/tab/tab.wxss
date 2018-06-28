@@ -1,0 +1,40 @@
+/* component/tab/tab.wxss */
+.mui-tab-wrap{position: relative;z-index: 99;}
+.mui-tab-container {
+    height: 44px;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.mui-tab{
+    display: flex;
+    background-color: #fff;
+    height: 44px;
+    position: relative;}
+.mui-tab-item{
+    background-size: 100% 1px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 44px;
+    -webkit-flex: 1;
+    color: #8d8d8d;
+}
+.mui-tab .mui-tab-item.mui-tab-selected{
+   color: #1195db;
+   border-bottom: 3px solid #1195db; 
+}
+
+.mui-tab-ink-bar {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF9900;
+    text-align: center;
+}
+.mui-tab-ink-bar-transition-backward{
+    transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, left 0.3s cubic-bezier(0.35, 0, 0.25, 1)  0.09s;
+}
+

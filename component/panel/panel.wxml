@@ -1,0 +1,53 @@
+<!--component/panel/panel.wxml-->
+<view class="mui-panel">
+    <view class="mui-panel__hd"></view>
+    <view class="mui-panel__bd">
+        <view class="mui-media-box">
+            <view class="mui-media-box__hd">
+                <image src="{{avatarUrl}}" class="mui-media-box__thumb"></image>
+            </view>
+            <view class="mui-media-box__bd spaceflex">
+                <view>
+                    <view class="mui-media-box__time time-wrapper">
+                        <view class="time">
+                            <image class="time-icon" src="http://temp.im/22x22"></image>
+                            <text>{{time}}</text>
+                        </view>
+                        <view class="mui-star-wrapper ">
+                            <view class="mui-star" wx:for="{{star}}" wx:key="star"></view>
+                            <view class="mui-star-hidden" wx:for="{{5-star}}" wx:key="star_hidden"></view>
+                        </view>
+                    </view>
+                    <view class="mui-media-box__title">
+                        {{title}}
+                    </view>
+                    <view class="mui-media-box__desc">
+                        <view class="mui-media-box__desc-item">
+                            前期：{{early ? early:'--'}}
+                        </view>
+                        <view class="mui-media-box__desc-item">
+                            预期：{{expected ? expected:'--'}}
+                        </view>
+                        <view class="mui-media-box__desc-item" style="font-weight: bold;">
+                            公布：{{publish ? publish:'--'}}
+                        </view>
+                    </view>
+                </view>
+                
+                <view wx:if="{{publiced !=''}}" class="status-wrapper {{publiced?'.active':''}}">
+                    <view class="status">
+                        {{publiced?'已公布':'未公布'}}
+                    </view>
+                </view>
+                <view wx:if="{{keeped !=''}}" class="status-wrapper {{keeped?'.active':''}}">
+                    <view class="status">
+                        {{keeped?'已收藏':'取消收藏'}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="mui-panel__ft">
+
+    </view>
+</view>

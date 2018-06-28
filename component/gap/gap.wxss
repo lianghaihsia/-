@@ -1,0 +1,2 @@
+/* component/gap/gap.wxss */
+.mui-gap{width:100%;height: 10rpx;background-color: #efeff4;}

@@ -1,0 +1,18 @@
+<!--component/msg.wxml-->
+
+<view class="mui-msg">
+    <view class="mui-msg__icon-area">
+        <image src="{{icon}}"></image>
+    </view>
+    <view class="mui-msg__text-area">
+        <view class="mui-msg__title">{{title}}</view>
+        <view class="mui-msg__desc">{{desc}}</view>
+    </view>
+    <view class="mui-msg__opr-area">
+         <view class="mui-btn-area" wx:for="{{buttons}}">
+              <navigator  class="mui-msg-navigator" url="{{item.link}}" hover-class ="mui-nav-hover" open-type="{{item.type == 1 ? 'switchTab' :'navigate' }}">
+                    {{item.text}}
+              </navigator>
+            </view>    
+    </view>
+</view>

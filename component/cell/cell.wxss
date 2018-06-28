@@ -1,0 +1,85 @@
+/* component/cell/cell.wxss */
+
+.mui-cell-group {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.mui-cell-group .mui-cell {
+    line-height: 1;
+    background-color: #ffffff;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 28rpx 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* .mui-cell-group .mui-cell:last-of-type{border-bottom: none;} */
+
+.mui-cell .mui-cell-icon {
+    margin-right: 26rpx;
+}
+
+.mui-cell .mui-cell-icon image {
+    width: 42rpx;
+    height: 42rpx;
+}
+
+.mui-cell .mui-cell-text {
+    color: #000000;
+    text-align: left;
+    font-size: 26rpx;
+    margin-right: 16rpx;
+    letter-spacing: 1rpx;
+    max-width: 460rpx;
+}
+
+.mui-cell .mui-cell-remark {
+    font-size: 24rpx;
+    color: #999999;
+    position: absolute;
+    right: 48rpx;
+    margin: auto;
+}
+
+
+/* .mui-cell::before{
+  content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    left: 4px;
+}
+.mui-cell:first-of-type::before{
+  border: none;
+}*/
+
+.mui-cell::after {
+    content: " ";
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-width: 1px 1px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    top: -6px;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 8px;
+}
+
+.mui-hover {
+    background-color: rgba(17, 149, 219, 0.4)
+}

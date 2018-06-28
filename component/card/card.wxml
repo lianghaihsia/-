@@ -1,0 +1,26 @@
+<!--component/card/card.wxml-->
+<view class="mui-card" >
+        <view class="mui-panel">
+            <view class="mui-panel__header">
+                <image class="mui-card-img" src="{{img}}"></image>                    
+            </view>
+            <view class="mui-panel__bd">
+                <view class="mui-card-content">
+                    <view class="mui-card-padding">
+                        <view>{{name}}</view>
+                        <view>
+                            <text>{{buy}}已购</text>
+                            <text>{{keep}}收藏</text>
+                        </view>                     
+                        <view class="mui-card-btn">
+                            <block wx:if="{{item.price != 0}}"><text>￥{{price}}</text></block>
+                            <block wx:else><text>免费</text></block>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="mui-panel__ft">
+                <view class="mui-card"></view>
+            </view>
+        </view>
+</view> 

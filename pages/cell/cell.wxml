@@ -1,0 +1,4 @@
+<!--pages/cell/cell.wxml-->
+<view style="margin: 0 30rpx">
+  <cell></cell>
+</view>
